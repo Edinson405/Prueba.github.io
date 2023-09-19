@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav-menu-link:hover{
+    color:red;
+    transition: 0.5s;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+/*.logo h2{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}*/
+
+.nav-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle_btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background: #dbdbdb;
+    width: 100%;
+    height: auto;
+}
+
+/*section{
+    padding: 100px;
+}*/
+
+.Tutorial1{
+    padding: 50px;
+
+}
+
+.tutorial{
+    padding: 80px 100px;
+    background: #fff;
+}
+
+
+.tutorial iframe{
+    width: 100%;
+    height: 520px;
+}
+
+@media(max-width: 920px){
+
+    .navbar .nav-menu{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    
+}
+
+@media(max-width: 576px){
+    
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+}

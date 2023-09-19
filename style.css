@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh ;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ),url('img/estudiando.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-bottom-right-radius: 125px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-menu-link, .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.nav-menu-link:hover{
+    color:red;
+    transition: 0.5s;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    padding: 200px 0;
+}
+
+section .contenedor{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hero h1{
+    font-size: 80px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.hero span{
+    display: block;
+    width: 50px;
+    height: 5px;
+
+}
+
+.hero p{
+    margin: 2rem 0;
+    width: 70%;
+}
+
+.tutoriales{
+    width: 100%;
+    height: 100hv;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tutorial-titulo{
+    padding: 20px;
+    font-size: 40px;
+    height: auto;
+}
+
+.contenedor-tutoriales{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.nosotros{
+    padding: 100px 50px;
+    background-color: #47BCCD;
+}
+
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    color: #fff;
+}
+
+.caja{
+    line-height: 1.5;
+}
+
+.caja h3{
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.logo2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.pie-pagina{
+    width: 100%;
+
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box .h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #333;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: red;
+}
+
+.contacto p{
+    font-size: 13px;
+    margin-top: 3px;
+    color: #555;
+}
+
+.pie-pagina .grupo-2{
+    width: 100%;
+    background: #fff;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+
+@media screen and (max-width: 991px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media(max-width: 920px){
+
+    .hero{
+        width: 100%;
+        height: 60vh ;
+        background: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),url('img/estudiando.jpg');
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    .navbar .nav-menu{
+        display: none;
+    }
+
+    .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    
+    .hero h1{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .hero span{
+        display: none;
+        width: 0;
+        height: 0;
+    
+    }
+    
+    .hero p{
+        margin: 0;
+        width: 90%;
+    }
+
+    .contenedor-tutoriales{
+        width: 60%;
+        flex-direction: column;
+        max-width: 1100px;
+        gap: 20px;
+    }
+    
+    .card{
+        width: 100%;
+        margin: 0px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .card .contenido{
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+    .card .contenido p{
+        line-height: 1;
+        color: #6a6a6a;
+    }
+    
+    .card .contenido h3{
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    
+    .card .contenido a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #2fb4cc;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+    }
+    
+    .card .contenido a:hover{
+        background: none;
+        color: #2fb4cc;
+    }
+    
+    .tutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Tutorial-titulo{
+        padding: 15px;
+        font-size: 30px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 670px){
+
+    .card img{
+        width: 100%;
+        height: 160px;
+    }
+
+    .tutoriales{
+        width: 100%;
+        height: 100hv;
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+@media(max-width: 576px){
+    .hero{
+        width: 100%;
+        height: 60vh ;
+        background: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),url('img/estudiando.jpg');
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    .hero p{
+        margin: 0;
+        width: 100%;
+    }
+
+    .contenedor-tutoriales{
+        width: 80%;
+        flex-direction: column;
+        max-width: 1100px;
+        gap: 20px;
+    }
+
+    .Tutorial-titulo{
+        padding: 10px;
+        font-size: 20px;
+        height: auto;
+    }
+}
